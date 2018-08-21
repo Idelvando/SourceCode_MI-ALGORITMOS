@@ -1,6 +1,7 @@
 3 SourceCode_PBL1
 # SourceCode_PBL1
 # SourceCode_PBL1
+
 /* Autor: Idelvando Cerqueira de Souza
 Componente Curricular: MI - Algoritmos
 Concluido em: 02/05/2018
@@ -15,38 +16,38 @@ e estou ciente que estes trechos não serão considerados para fins de avaliaç�
 
 int main ()
 {
-  setlocale(LC_ALL, "Portuguese");
-  int OpcaoMenu=0, ContadorEleitores=0, Presidente=0, Governador=0, Senador=0, DepFederal=0, DepEstadual=0, Confirma=0; //Variáveis utilizadas para guardar os votos em cada categoria;
-  int Maeli=0, AnBrasil=0, Lissandro=0, MaiaDaAna=0, Gentil=0, DonaSelma=0, Gutemberg=0, Fernando=0, AnaVitoria=0, PauloGui=0; //Variáveis utilizadas para guardar os votos de cada candidato;
-  int AnaRita=0, AnaGui=0, Adalberto=0, BrancosDepEstad=0, NulosDepEstad=0, BrancosDepFed=0, NulosDepFed=0, BrancosSenad=0; //Variáveis utilizadas para guardar os votos em cada categoria;
-  int NulosSenad=0, BrancosGov=0, NulosGov=0, BrancosPresid=0, NulosPresid=0; //Variáveis utilizadas para guardar os votos nulos e brancos em cada categoria;
-  int ValidosDepEstad=0, ValidosDepFed=0, ValidosSenador=0, ValidosGov=0, ValidosPresid=0; //Variáveis utilizadas para guardar os votos válidos em cada categoria;
-  int Feminino=0, Masculino=0, ContMascFem=0;
-  float PercentMasculino=0, PercentFeminino=0;
-  float PorcentAnaRita=0, PorcentAnaGui=0, PorcentAdalberto=0, PorcentAnaVitoria=0, PorcentPauloGui=0; //Variáveis utilizadas para calcular o percentual de botos em cada candidato;
-  float PorcentFernando=0, PorcentMaiaDaAna=0, PorcentGentil=0, PorcentDonaSelma=0; //Variáveis utilizadas para calcular o percentual de botos em cada candidato;
-  float PorcentLissandro=0, PorcentMaeli=0, PorcentAnBrasil=0, PorcentGutemberg=0; //Variáveis utilizadas para calcular o percentual de botos em cada candidato;
-  float PorcentBrancosDepEst=0, PorcentBrancosDepFed=0, PorcentBrancosSenad=0, PorcentBrancosGov=0, PorcentBrancosPresid=0; //Variáveis utilizadas para calcular o percentual de botos em cada categoria;
-  float PorcentNulosDepEst=0, PorcentNulosDepFed=0, PorcentNulosSenad=0, PorcentNulosGov=0, PorcentNulosPresid=0; //Variáveis utilizadas para calcular o percentual de botos em cada categoria;
-  double TituloEleitoral=0; //Variável utilizada para guardar o título de cada eleitor;
+    setlocale(LC_ALL, "Portuguese");
+    int OpcaoMenu=0, ContadorEleitores=0, Presidente=0, Governador=0, Senador=0, DepFederal=0, DepEstadual=0, Confirma=0; //Variáveis utilizadas para guardar os votos em cada categoria;
+    int Maeli=0, AnBrasil=0, Lissandro=0, MaiaDaAna=0, Gentil=0, DonaSelma=0, Gutemberg=0, Fernando=0, AnaVitoria=0, PauloGui=0; //Variáveis utilizadas para guardar os votos de cada candidato;
+    int AnaRita=0, AnaGui=0, Adalberto=0, BrancosDepEstad=0, NulosDepEstad=0, BrancosDepFed=0, NulosDepFed=0, BrancosSenad=0; //Variáveis utilizadas para guardar os votos em cada categoria;
+    int NulosSenad=0, BrancosGov=0, NulosGov=0, BrancosPresid=0, NulosPresid=0; //Variáveis utilizadas para guardar os votos nulos e brancos em cada categoria;
+    int ValidosDepEstad=0, ValidosDepFed=0, ValidosSenador=0, ValidosGov=0, ValidosPresid=0; //Variáveis utilizadas para guardar os votos válidos em cada categoria;
+    int Feminino=0, Masculino=0, ContMascFem=0;
+    float PercentMasculino=0, PercentFeminino=0;
+    float PorcentAnaRita=0, PorcentAnaGui=0, PorcentAdalberto=0, PorcentAnaVitoria=0, PorcentPauloGui=0; //Variáveis utilizadas para calcular o percentual de botos em cada candidato;
+    float PorcentFernando=0, PorcentMaiaDaAna=0, PorcentGentil=0, PorcentDonaSelma=0; //Variáveis utilizadas para calcular o percentual de botos em cada candidato;
+    float PorcentLissandro=0, PorcentMaeli=0, PorcentAnBrasil=0, PorcentGutemberg=0; //Variáveis utilizadas para calcular o percentual de botos em cada candidato;
+    float PorcentBrancosDepEst=0, PorcentBrancosDepFed=0, PorcentBrancosSenad=0, PorcentBrancosGov=0, PorcentBrancosPresid=0; //Variáveis utilizadas para calcular o percentual de botos em cada categoria;
+    float PorcentNulosDepEst=0, PorcentNulosDepFed=0, PorcentNulosSenad=0, PorcentNulosGov=0, PorcentNulosPresid=0; //Variáveis utilizadas para calcular o percentual de botos em cada categoria;
+    double TituloEleitoral=0; //Variável utilizada para guardar o título de cada eleitor;
 
-  do
-  {
-    /*
-    Menu inicial do programa;
-    Três diferentes opções de entrada.
-    */
-    puts ("---------------------------------------------------------------------------------------------");
-    printf ("*|ELEIÇÕES DE 2018 #VEMPRAURNA!\n");
-    printf ("*|ESCOLHA UMA DAS OPÇÕES ABAIXO PARA PROSSEGUIR:\n");
-    printf ("*|\t[1] - VOTAÇÃO GERAL:\n");
-    printf ("*|\t[2] - GERAR RELATÓRIO FINAL ESTATÍSTICO:\n");
-    printf ("*|\t[3] - PARAR EXECUÇÃO DO PROGRAMA:\n");
-    printf ("*|[TSEC - TRIBUNAL SUPERIOR DE ECOMP]\n");
-    printf ("---------------------------------------------------------------------------------------------\n");
-    scanf ("%d", &OpcaoMenu);
-    setbuf(stdin, NULL);
-    system ("cls");
+    do
+    {
+      /*
+      Menu inicial do programa;
+      Três diferentes opções de entrada. 
+      */
+        puts ("---------------------------------------------------------------------------------------------");
+        printf ("*|ELEIÇÕES DE 2018 #VEMPRAURNA!\n");
+        printf ("*|ESCOLHA UMA DAS OPÇÕES ABAIXO PARA PROSSEGUIR:\n");
+        printf ("*|\t[1] - VOTAÇÃO GERAL:\n");
+        printf ("*|\t[2] - GERAR RELATÓRIO FINAL ESTATÍSTICO:\n");
+        printf ("*|\t[3] - PARAR EXECUÇÃO DO PROGRAMA:\n");
+        printf ("*|[TSEC - TRIBUNAL SUPERIOR DE ECOMP]\n");
+        printf ("---------------------------------------------------------------------------------------------\n");
+        scanf ("%d", &OpcaoMenu);
+        setbuf(stdin, NULL);
+        system ("cls");
 
     switch (OpcaoMenu)
     {
