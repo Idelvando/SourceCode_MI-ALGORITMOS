@@ -7,9 +7,9 @@ Qualquer trecho de código de outra autoria que não a minha está destacado com
 e estou ciente que estes trechos não serão considerados para fins de avaliação.*/
 /*A ideia deste projeto é desenvolver um programa básico apresentando somente os mecanismos fundamentais da linguagem C, sem se preocupar com modularização ou estruturas de dados mais avançadas, o intuito é introduzir o estudante à linguagem C.*/
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <locale.h>
+include <stdlib.h>
+include <stdio.h>
+include <locale.h>
 
 int main ()
 {
