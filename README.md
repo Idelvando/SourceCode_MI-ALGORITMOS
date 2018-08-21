@@ -5,6 +5,7 @@ Declaro que este código foi elaborado por mim de forma individual e não conté
 tais como provindos de livros e apostilas, e páginas ou documentos eletrônicos da Internet.
 Qualquer trecho de código de outra autoria que não a minha está destacado com uma citação para o autor e a fonte do código,
 e estou ciente que estes trechos não serão considerados para fins de avaliação.*/
+/*A ideia deste projeto é desenvolver um programa básico apresentando somente os mecanismos fundamentais da linguagem C, sem se preocupar com modularização ou estruturas de dados mais avançadas, o intuito é introduzir o estudante à linguagem C.*/
 
 #include <stdlib.h>
 #include <stdio.h>
